@@ -27,6 +27,24 @@ img {
   clear: both;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrapper {
   width: 1110px;
   margin: 0 auto;
@@ -91,7 +109,7 @@ img {
   padding: 0;
 }
 
-h2::after {
+.title::after {
   content: "";
   display: block;
   background-color: #1abc9c;
@@ -142,6 +160,7 @@ h2::after {
   line-height: 32px;
   text-transform: uppercase;
 }
+
 .product-price {
   float: right;
 }
@@ -154,8 +173,8 @@ h2::after {
   background: linear-gradient(to right, #1abc9c 78%, #7fd9c7 78%);
 }
 
-.latest-news {
-  padding-top: 90px;
+.featured-products {
+  margin-bottom: 90px;
 }
 
 .latest-news-list {
@@ -181,7 +200,6 @@ h2::after {
 
 .title-news {
   margin: 0;
-  margin-bottom: 24px;
   font-family: "OpenSans", sans-serif;
   font-weight: 600;
   font-size: 18px;
