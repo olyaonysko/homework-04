@@ -55,7 +55,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 300;
   font-size: 30px;
   line-height: 32px;
@@ -71,7 +71,6 @@ input[type="radio"].visually-hidden {
 
 .site-nav {
   float: right;
-  margin: 0;
   padding: 0;
   list-style: none;
   font-weight: 900;
@@ -115,9 +114,7 @@ input[type="radio"].visually-hidden {
   background-color: #1abc9c;
   width: 164px;
   height: 7px;
-  margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 92px;
+  margin: 32px auto 92px;
 }
 
 .products-list {
@@ -193,8 +190,6 @@ input[type="radio"].visually-hidden {
 }
 
 .images {
-  width: 350px;
-  height: 262px;
   margin-bottom: 10px;
 }
 
@@ -213,8 +208,7 @@ input[type="radio"].visually-hidden {
   background-color: #4ec6ab;
   width: 136px;
   height: 3px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 10px 0 30px;
 }
 
 .news-text {
